@@ -3,10 +3,155 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sir Tuomas – Oikeudellinen asiantuntija</title>
+  <title>Oikeudellinen asiantuntija – Sir Tuomas</title>
+  <meta name="description" content="Oikeustradenomiopiskelija – tietosuoja, julkisoikeus, työelämän sääntely, kilpailuoikeus. Etäpalvelut koko Suomeen." />
+  <style>
+    :root{--bg:#0b0c10;--card:#121318;--muted:#a3a7b7;--text:#eef2ff;--brand:#4f8cff;--brand2:#7cf4ff;--shadow:0 10px 30px rgba(0,0,0,.35)}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:linear-gradient(180deg,#0b1020,#0b0c10);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto}
+    a{color:var(--brand);text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+    header{position:sticky;top:0;background:rgba(11,12,16,.7);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid #1f2330;z-index:40}
+    .nav{display:flex;gap:16px;align-items:center;justify-content:space-between}
+    .logo{display:flex;gap:10px;align-items:center;font-weight:700}
+    .logo-badge{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand2));display:grid;place-items:center;box-shadow:var(--shadow)}
+    .logo-badge span{font-size:18px;font-weight:900;color:#061021}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center;padding:56px 0}
+    .card{background:radial-gradient(1200px 400px at -10% -40%,rgba(79,140,255,.18),transparent 60%),radial-gradient(1000px 380px at 120% 120%,rgba(124,244,255,.14),transparent 62%),var(--card);border:1px solid #1c2232;border-radius:22px;box-shadow:var(--shadow);padding:28px}
+    h1{font-size:clamp(28px,4vw,46px);margin:0 0 8px}
+    .lead{color:var(--muted);font-size:clamp(16px,2.2vw,18px)}
+    .cta{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:12px;border:1px solid #243049;background:linear-gradient(180deg,#1a2436,#121825);color:#dfe7ff;font-weight:600}
+    .btn.primary{background:linear-gradient(180deg,var(--brand),#2a57ff);border-color:#2a57ff;color:white}
+    .tick{display:inline-flex;align-items:center;gap:8px;background:#0e1524;border:1px solid #1d2a47;padding:8px 10px;border-radius:12px;color:#cfe1ff;margin-right:8px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .service{padding:18px;border-radius:18px;border:1px solid #1e2536;background:linear-gradient(180deg,#0e1220,#0c1019)}
+    .service h3{margin:0 0 6px;font-size:18px}
+    .service p{margin:0;color:#b9bfd3}
+    .section{padding:40px 0}
+    .section h2{margin:0 0 12px;font-size:26px}
+    .badge{font-size:12px;color:#bcd1ff;background:#0e1524;border:1px solid #1e2b48;padding:5px 9px;border-radius:999px}
+    .list{display:grid;gap:10px}
+    .list li{list-style:none;padding:10px 12px;border:1px dashed #23314f;border-radius:12px;background:#0b111d;color:#cbd6ff}
+    footer{border-top:1px solid #1b2333;color:#9fb0cc}
+    .cols{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.cols{grid-template-columns:1fr}}
+  </style>
 </head>
 <body>
-  <h1>Tervetuloa!</h1>
-  <p>Sivusto toimii nyt GitHub Pagesin kautta 🎉</p>
+  <header>
+    <div class="wrap nav">
+      <div class="logo">
+        <div class="logo-badge"><span>ST</span></div>
+        <div>Oikeudellinen asiantuntija</div>
+      </div>
+      <nav>
+        <a href="#palvelut">Palvelut</a>
+        <a href="#minusta">Minusta</a>
+        <a href="#yhteys">Yhteys</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="card">
+        <span class="badge">Etäpalvelut • koko Suomi</span>
+        <h1>Selkeä, nopea ja luottamuksellinen oikeusapu</h1>
+        <p class="lead">Oikeustradenomi (AMK) – erikoisosaaminen: <strong>tietosuoja</strong>, <strong>julkisoikeus</strong>, <strong>työelämän sääntely</strong> ja <strong>kilpailuoikeus</strong>. Teen keikkatöitä yrityksille ja julkiselle sektorille.</p>
+        <div class="cta">
+          <a class="btn primary" href="mailto:juridiikanasiantuntija@pm.me?subject=Yhteydenotto%20sivuilta&body=Hei,%20kerro%20lyhyesti%20tarpeestasi%20ja%20puhelinnumerosi.%20Vastaan%20pian.">Ota yhteyttä</a>
+          <a class="btn" href="#palvelut">Palvelut ↓</a>
+        </div>
+        <p style="margin-top:14px;color:#9fb0cc">⚡ Vastaan yleensä saman päivän aikana. Sopimus ja toimitus sähköisesti.</p>
+        <div style="margin-top:10px">
+          <span class="tick">✔ Ilmainen ensikartoitus (15 min)</span>
+          <span class="tick">✔ Kiinteä hinta tai tunti</span>
+          <span class="tick">✔ Proton-salattu sähköposti</span>
+        </div>
+      </div>
+      <div class="card" aria-hidden="true">
+        <div style="aspect-ratio:4/5;border-radius:16px;background:radial-gradient(600px 260px at 20% -10%,rgba(79,140,255,.25),transparent 55%),linear-gradient(180deg,#0b1020,#0a0d16);border:1px solid #1d2435;display:grid;place-items:center;color:#a9c7ff">
+          <div style="text-align:center;padding:16px">
+            <div style="font-size:42px;margin-bottom:6px">🛡️</div>
+            <div style="font-weight:700;font-size:18px">Tietosuoja & sopimukset</div>
+            <div style="color:#9fb0cc">Nopeat toimitukset, selkeä kieli</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="palusta" class="section" hidden></section>
+
+    <section id="palvelut" class="section">
+      <h2>Palvelut</h2>
+      <div class="grid">
+        <div class="service">
+          <h3>Tietosuoja (GDPR)</h3>
+          <p>Rekisteriselosteet, tietosuojaselosteet, PIA/DPIA, DPA-liitteet, ohjeet ja koulutukset.</p>
+        </div>
+        <div class="service">
+          <h3>Julkisoikeus</h3>
+          <p>Hallintomenettely, julkisuuslaki, hankinnat, oikaisuvaatimukset ja muistutukset.</p>
+        </div>
+        <div class="service">
+          <h3>Työelämän sääntely</h3>
+          <p>Työsopimusmallit, kilpailukieltosopimukset, YT-menettely, ohjeet esihenkilöille.</p>
+        </div>
+        <div class="service">
+          <h3>Kilpailu- ja markkinaoikeus</h3>
+          <p>PK-komplianssi, kieltojen ABC, markkinointioikeudelliset tarkistukset.</p>
+        </div>
+        <div class="service">
+          <h3>Sopimukset</h3>
+          <p>Palvelu-, alihankinta- ja salassapitosopimukset. Selkokieliset ehdot ja neuvottelutuki.</p>
+        </div>
+        <div class="service">
+          <h3>Koulutus & materiaalit</h3>
+          <p>1–2 h tiiviskoulutukset, muistilistat ja käytännön ohjeet henkilöstölle.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="minusta" class="section">
+      <h2>Minusta</h2>
+      <p>Olen oikeustradenomiopiskelija (AMK), tausta myynnissä ja startup-ympäristössä. Teen toimeksiannot ketterästi, dokumentoin selkeästi ja kommunikaatio on suoraa – ilman juristikieltä.</p>
+      <ul class="list">
+        <li>Toimitus pääosin etänä • koko Suomi</li>
+        <li>Kevytyrittäjänä / laskutuspalvelun kautta</li>
+        <li>Työkalut: ProtonMail, Proton Drive, Proton Pass, VPN</li>
+      </ul>
+    </section>
+
+    <section id="faq" class="section">
+      <h2>Usein kysyttyä</h2>
+      <ul class="list">
+        <li><strong>Paljonko maksaa?</strong> Pienet toimeksiannot alkaen 95 € + alv tai kiinteä pakettihinta. Pyydä tarjous – vastaan yleensä saman päivän aikana.</li>
+        <li><strong>Miten aloitamme?</strong> Varataan 15 min kartoitus (maksuton) ja päätetään etenemisestä.</li>
+        <li><strong>Voiko sopimukset allekirjoittaa sähköisesti?</strong> Kyllä. Käytän yleisiä allekirjoituspalveluja tai PDF-allekirjoitusta.</li>
+      </ul>
+    </section>
+
+    <section id="yhteys" class="section">
+      <h2>Yhteystiedot</h2>
+      <ul class="list">
+        <li><a href="mailto:juridiikanasiantuntija@pm.me">juridiikanasiantuntija@pm.me</a></li>
+        <li><a href="mailto:oikeudellinenasiantuntija@protonmail.com">oikeudellinenasiantuntija@protonmail.com</a></li>
+      </ul>
+      <div class="cta" style="margin-top:8px">
+        <a class="btn primary" href="mailto:juridiikanasiantuntija@pm.me?subject=Yhteydenotto">Lähetä sähköposti</a>
+        <a class="btn" href="#">Takaisin ylös ↑</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap cols" style="padding:22px 0">
+      <div>© <span id="y"></span> Sir Tuomas — oikeudelliset palvelut</div>
+      <div style="text-align:right">Ilmainen hosting: GitHub Pages</div>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
+
