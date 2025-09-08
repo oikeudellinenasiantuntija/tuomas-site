@@ -3,47 +3,59 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Oikeudellinen asiantuntija – Tuomas Mäkinen</title>
-  <meta name="description" content="Oikeustradenomi (AMK) – tietosuoja, julkisoikeus, työelämän sääntely, kilpailuoikeus. Etäpalvelut koko Suomeen." />
+  <title>Asiakirjajuridiikan asiantuntija – Tuomas Mäkinen</title>
+  <meta name="description" content="Asiakirjajuridiikan asiantuntija. Sopimukset, muistutukset, tietosuoja (GDPR) ja julkisoikeus. Selkeä, nopea ja luottamuksellinen etäpalvelu koko Suomeen." />
   <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://oikeudellinenasiantuntija.github.io/tuomas-site/">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Asiakirjajuridiikan asiantuntija – Tuomas Mäkinen">
+  <meta property="og:description" content="Asiakirjat • GDPR • Julkisoikeus. Selkeä, nopea ja luottamuksellinen etäpalvelu.">
+  <meta property="og:url" content="https://oikeudellinenasiantuntija.github.io/tuomas-site/">
+  <meta property="og:image" content="https://oikeudellinenasiantuntija.github.io/tuomas-site/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Asiakirjajuridiikan asiantuntija – Tuomas Mäkinen">
+  <meta name="twitter:description" content="Asiakirjat • GDPR • Julkisoikeus. Selkeä, nopea ja luottamuksellinen etäpalvelu.">
+  <meta name="twitter:image" content="https://oikeudellinenasiantuntija.github.io/tuomas-site/og-image.png">
+
+  <link rel="icon" href="/favicon.ico">
+
   <style>
-    :root{--bg:#0b0c10;--card:#121318;--muted:#a3a7b7;--text:#eef2ff;--brand:#4f8cff;--brand2:#7cf4ff;--shadow:0 10px 30px rgba(0,0,0,.35)}
+    :root{--bg:#0b0c10;--card:#121318;--muted:#a8b0c6;--text:#eef2ff;--brand:#4f8cff;--brand2:#7cf4ff;--border:#1d2435;--shadow:0 10px 30px rgba(0,0,0,.35)}
     *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:linear-gradient(180deg,#0b1020,#0b0c10);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto}
+    html,body{margin:0;padding:0;background:#0b0c10;color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto}
     a{color:var(--brand);text-decoration:none} a:hover{text-decoration:underline}
-    .wrap{max-width:1100px;margin:0 auto;padding:24px}
-    header{position:sticky;top:0;background:rgba(11,12,16,.7);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid #1f2330;z-index:40}
+    .wrap{max-width:1024px;margin:0 auto;padding:20px}
+    header{position:sticky;top:0;background:rgba(11,12,16,.85);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);z-index:40}
     .nav{display:flex;gap:16px;align-items:center;justify-content:space-between}
     .logo{display:flex;gap:10px;align-items:center;font-weight:700}
-    .logo-badge{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand2));display:grid;place-items:center;box-shadow:var(--shadow)}
-    .logo-badge span{font-size:18px;font-weight:900;color:#061021}
-    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center;padding:56px 0}
-    .card{background:radial-gradient(1200px 400px at -10% -40%,rgba(79,140,255,.18),transparent 60%),radial-gradient(1000px 380px at 120% 120%,rgba(124,244,255,.14),transparent 62%),var(--card);border:1px solid #1c2232;border-radius:22px;box-shadow:var(--shadow);padding:28px}
-    h1{font-size:clamp(28px,4vw,46px);margin:0 0 8px}
-    .lead{color:var(--muted);font-size:clamp(16px,2.2vw,18px)}
-    .cta{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
-    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:12px;border:1px solid #243049;background:linear-gradient(180deg,#1a2436,#121825);color:#dfe7ff;font-weight:600}
-    .btn.primary{background:linear-gradient(180deg,#2a57ff,#2447ff);border-color:#2a57ff;color:#fff}
-    .tick{display:inline-flex;align-items:center;gap:8px;background:#0e1524;border:1px solid #1d2a47;padding:8px 10px;border-radius:12px;color:#cfe1ff;margin-right:8px}
-    .section{padding:40px 0}
-    .section h2{margin:0 0 12px;font-size:26px}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .service{padding:18px;border-radius:18px;border:1px solid #1e2536;background:linear-gradient(180deg,#0e1220,#0c1019)}
+    .badge{font-size:12px;color:#bcd1ff;background:#0e1524;border:1px solid #1e2b48;padding:4px 8px;border-radius:999px}
+    nav a{color:var(--muted)}
+    .hero{padding:56px 0}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:22px;box-shadow:var(--shadow);padding:28px}
+    h1{font-size:clamp(28px,4.2vw,44px);margin:0 0 8px}
+    .lead{color:var(--muted);font-size:clamp(16px,2.1vw,18px)}
+    .cta{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:12px;border:1px solid #243049;background:#121825;color:#dfe7ff;font-weight:600}
+    .btn.primary{background:linear-gradient(180deg,var(--brand),#2a57ff);border-color:#2a57ff;color:white}
+    .section{padding:34px 0}
+    .section h2{margin:0 0 12px;font-size:24px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+    .service{padding:16px;border-radius:18px;border:1px solid #1e2536;background:#0e1220}
     .service h3{margin:0 0 6px;font-size:18px}
     .service p{margin:0;color:#b9bfd3}
-    .list{display:grid;gap:10px}
-    .list li{list-style:none;padding:10px 12px;border:1px dashed #23314f;border-radius:12px;background:#0b111d;color:#cbd6ff}
     footer{border-top:1px solid #1b2333;color:#9fb0cc}
-    .cols{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-    @media (max-width:900px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.cols{grid-template-columns:1fr}}
+    .cols{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+    @media (max-width:900px){.cols{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
   <header>
     <div class="wrap nav">
       <div class="logo">
-        <div class="logo-badge"><span>TM</span></div>
-        <div>Oikeudellinen asiantuntija</div>
+        <div class="badge">TM</div>
+        <div>Asiakirjajuridiikan asiantuntija</div>
       </div>
       <nav>
         <a href="#palvelut">Palvelut</a>
@@ -57,25 +69,11 @@
     <!-- HERO -->
     <section class="hero">
       <div class="card">
-        <span class="badge" style="font-size:12px;color:#bcd1ff;background:#0e1524;border:1px solid #1e2b48;padding:5px 9px;border-radius:999px">Etäpalvelut • koko Suomi</span>
+        <span class="badge">Etäpalvelut • koko Suomi</span>
         <h1>Selkeä, nopea ja luottamuksellinen oikeusapu</h1>
-        <p class="lead">
-          Oikeustradenomi (AMK) – erikoisosaaminen:
-          <strong>tietosuoja</strong>, <strong>julkisoikeus</strong>,
-          <strong>työelämän sääntely</strong> ja <strong>kilpailuoikeus</strong>.
-        </p>
+        <p class="lead">Asiakirjojen laatiminen, tietosuoja (GDPR) ja julkisoikeuden asiointiapu. Sopimukset ja muistutukset selkeällä kielellä.</p>
         <div class="cta">
-          <a class="btn primary" href="mailto:juridiikanasiantuntija@pm.me?subject=Yhteydenotto%20sivuilta&body=Hei,%20kerro%20lyhyesti%20tarpeestasi%20ja%20puhelinnumerosi.%20Vastaan%20pian.">Ota yhteyttä</a>
-          <a class="btn" href="#palvelut">Palvelut ↓</a>
-        </div>
-      </div>
-      <div class="card" aria-hidden="true">
-        <div style="aspect-ratio:4/5;border-radius:16px;background:radial-gradient(600px 260px at 20% -10%,rgba(79,140,255,.25),transparent 55%),linear-gradient(180deg,#0b1020,#0a0d16);border:1px solid #1d2435;display:grid;place-items:center;color:#a9c7ff">
-          <div style="text-align:center;padding:16px">
-            <div style="font-size:42px;margin-bottom:6px">🛡️</div>
-            <div style="font-weight:700;font-size:18px">Tietosuoja & sopimukset</div>
-            <div style="color:#9fb0cc">Nopeat toimitukset, selkeä kieli</div>
-          </div>
+          <a class="btn primary" href="mailto:juridinenasiantuntija@pm.me?subject=Yhteydenotto">Ota yhteyttä</a>
         </div>
       </div>
     </section>
@@ -84,46 +82,64 @@
     <section id="palvelut" class="section">
       <h2>Palvelut</h2>
       <div class="grid">
-        <div class="service"><h3>Tietosuoja (GDPR)</h3><p>Rekisteri- ja tietosuojaselosteet, PIA/DPIA, DPA-liitteet, ohjeet ja koulutukset.</p></div>
-        <div class="service"><h3>Julkisoikeus</h3><p>Hallintomenettely, julkisuuslaki, hankinnat, oikaisuvaatimukset ja muistutukset.</p></div>
-        <div class="service"><h3>Työelämän sääntely</h3><p>Työsopimusmallit, kilpailukieltosopimukset, YT-menettely, ohjeet esihenkilöille.</p></div>
-        <div class="service"><h3>Kilpailu- ja markkinaoikeus</h3><p>PK-komplianssi, kieltojen ABC, markkinointioikeudelliset tarkistukset.</p></div>
-        <div class="service"><h3>Sopimukset</h3><p>Palvelu-, alihankinta- ja salassapitosopimukset. Selkokieliset ehdot ja neuvottelutuki.</p></div>
-        <div class="service"><h3>Koulutus & materiaalit</h3><p>1–2 h tiiviskoulutukset, muistilistat ja käytännön ohjeet henkilöstölle.</p></div>
+        <div class="service"><h3>Asiakirjojen laatiminen</h3><p>Sopimukset, muistutukset ja oikaisuvaatimukset. Selkeä kieli ja käytännölliset ehdot.</p></div>
+        <div class="service"><h3>Tietosuoja (GDPR)</h3><p>Tietosuojaselosteet, DPA-liitteet ja käytännön ohjeet pk-yrityksille.</p></div>
+        <div class="service"><h3>Julkisoikeuden asiointiapu</h3><p>Hallintomenettely, julkisuuspyynnöt ja valituspolkujen hahmottaminen.</p></div>
       </div>
     </section>
 
     <!-- MINUSTA -->
     <section id="minusta" class="section">
       <h2>Minusta</h2>
-      <p>Olen Tuomas Mäkinen, oikeustradenomiopiskelija (AMK). Taustani on myynnissä ja startup-ympäristössä. Teen toimeksiannot ketterästi, dokumentoin selkeästi ja kommunikaatio on suoraa – ilman juristikieltä.</p>
-      <ul class="list">
-        <li>Toimitus pääosin etänä • koko Suomi</li>
-        <li>Kevytyrittäjänä / laskutuspalvelun kautta</li>
-        <li>Työkalut: ProtonMail, Proton Drive, Proton Pass, VPN</li>
-      </ul>
+      <p>Olen <strong>Tuomas Mäkinen</strong>, asiakirjajuridiikan asiantuntija ja oikeustradenomiopiskelija (AMK). Taustani on myynnissä ja startup-ympäristössä. Teen toimeksiannot ketterästi ja selkokielisesti.</p>
     </section>
 
     <!-- YHTEYS -->
     <section id="yhteys" class="section">
       <h2>Yhteystiedot</h2>
-      <ul class="list">
-        <li><a href="mailto:juridiikanasiantuntija@pm.me">juridiikanasiantuntija@pm.me</a></li>
-        <li><a href="mailto:oikeudellinenasiantuntija@protonmail.com">oikeudellinenasiantuntija@protonmail.com</a></li>
-      </ul>
-      <div class="cta" style="margin-top:8px">
-        <a class="btn primary" href="mailto:juridiikanasiantuntija@pm.me?subject=Yhteydenotto">Lähetä sähköposti</a>
-        <a class="btn" href="#">Takaisin ylös ↑</a>
+      <p>Ota yhteyttä sähköpostitse – vastaan yleensä saman päivän aikana:</p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:juridinenasiantuntija@pm.me?subject=Yhteydenotto">juridinenasiantuntija@pm.me</a>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="wrap cols" style="padding:22px 0">
-      <div>© <span id="y"></span> Tuomas Mäkinen — oikeudelliset palvelut</div>
-      <div style="text-align:right">Ilmainen hosting: GitHub Pages</div>
+    <div class="wrap cols" style="padding:20px 0">
+      <div>© <span id="y"></span> Tuomas Mäkinen — Asiakirjajuridiikan asiantuntija</div>
+      <div style="text-align:right">Sivusto: GitHub Pages</div>
     </div>
   </footer>
   <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "name": "Tuomas Mäkinen",
+        "jobTitle": "Asiakirjajuridiikan asiantuntija",
+        "email": "mailto:juridinenasiantuntija@pm.me",
+        "url": "https://oikeudellinenasiantuntija.github.io/tuomas-site/"
+      },
+      {
+        "@type": "WebSite",
+        "name": "Asiakirjajuridiikan asiantuntija – Tuomas Mäkinen",
+        "url": "https://oikeudellinenasiantuntija.github.io/tuomas-site/",
+        "inLanguage": "fi"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type":"Question","name":"Mitä palveluita tarjoat?","acceptedAnswer":{"@type":"Answer","text":"Asiakirjojen laatiminen, tietosuoja (GDPR) ja julkisoikeuden asiointiapu."}},
+          {"@type":"Question","name":"Miten otan yhteyttä?","acceptedAnswer":{"@type":"Answer","text":"Sähköpostitse osoitteeseen juridinenasiantuntija@pm.me."}},
+          {"@type":"Question","name":"Toimitatko koko Suomeen?","acceptedAnswer":{"@type":"Answer","text":"Kyllä, kaikki palvelut onnistuvat etänä koko Suomeen."}}
+        ]
+      }
+    ]
+  }
+  </script>
 </body>
 </html>
