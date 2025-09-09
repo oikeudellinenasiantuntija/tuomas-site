@@ -2,88 +2,144 @@
 <html lang="fi">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Oikeudellinen Asiantuntija — Tuomas</title>
-  <meta name="description" content="Oikeustradenomi (AMK) — sopimukset, asiakirjat ja tietosuoja käytännössä." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Asiakirjajuridiikan asiantuntija – Tuomas Mäkinen</title>
+  <meta name="description" content="Asiakirjajuridiikan asiantuntija. Sopimukset, muistutukset, tietosuoja (GDPR) ja julkisoikeus. Selkeä, nopea ja luottamuksellinen etäpalvelu koko Suomeen." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://oikeudellinenasiantuntija.github.io/tuomas-site/">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Asiakirjajuridiikan asiantuntija – Tuomas Mäkinen">
+  <meta property="og:description" content="Asiakirjat • GDPR • Julkisoikeus. Selkeä, nopea ja luottamuksellinen etäpalvelu.">
+  <meta property="og:url" content="https://oikeudellinenasiantuntija.github.io/tuomas-site/">
+  <meta property="og:image" content="https://oikeudellinenasiantuntija.github.io/tuomas-site/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Asiakirjajuridiikan asiantuntija – Tuomas Mäkinen">
+  <meta name="twitter:description" content="Asiakirjat • GDPR • Julkisoikeus. Selkeä, nopea ja luottamuksellinen etäpalvelu.">
+  <meta name="twitter:image" content="https://oikeudellinenasiantuntija.github.io/tuomas-site/og-image.png">
+
+  <link rel="icon" href="/favicon.ico">
+
   <style>
-    :root{--bg:#f8fafc;--card:#ffffff;--accent:#0b63d6;--muted:#6b7280;--maxw:980px}
+    :root{--bg:#0b0c10;--card:#121318;--muted:#a8b0c6;--text:#eef2ff;--brand:#4f8cff;--brand2:#7cf4ff;--border:#1d2435;--shadow:0 10px 30px rgba(0,0,0,.35)}
     *{box-sizing:border-box}
-    body{margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:var(--bg); color:#111827; -webkit-font-smoothing:antialiased}
-    .container{max-width:var(--maxw);margin:40px auto;padding:24px}
-    .hero{display:grid;grid-template-columns:1fr;gap:20px;align-items:center}
-    .card{background:var(--card);border-radius:12px;padding:28px;box-shadow:0 6px 20px rgba(15,23,42,0.06)}
-    h1{margin:0 0 8px;font-size:28px;line-height:1.05}
-    p.lead{margin:0 0 18px;color:var(--muted);font-size:16px}
-    .cta{display:inline-block;background:var(--accent);color:#fff;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:600}
-    .disclaimer{margin-top:18px;padding:14px;border-left:4px solid #e5e7eb;background:#fbfbfb;color:#374151;border-radius:6px}
-
-    /* Layout for larger screens */
-    @media(min-width:920px){
-      .hero{grid-template-columns:1fr 360px}
-      h1{font-size:34px}
-    }
-
-    .services{display:grid;grid-template-columns:1fr;gap:14px;margin-top:20px}
-    @media(min-width:720px){.services{grid-template-columns:repeat(2,1fr)}}
-    .service{background:transparent;padding:12px}
+    html,body{margin:0;padding:0;background:#0b0c10;color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto}
+    a{color:var(--brand);text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{max-width:1024px;margin:0 auto;padding:20px}
+    header{position:sticky;top:0;background:rgba(11,12,16,.85);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);z-index:40}
+    .nav{display:flex;gap:16px;align-items:center;justify-content:space-between}
+    .logo{display:flex;gap:10px;align-items:center;font-weight:700}
+    .badge{font-size:12px;color:#bcd1ff;background:#0e1524;border:1px solid #1e2b48;padding:4px 8px;border-radius:999px}
+    nav a{color:var(--muted)}
+    .hero{padding:56px 0}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:22px;box-shadow:var(--shadow);padding:28px}
+    h1{font-size:clamp(28px,4.2vw,44px);margin:0 0 8px}
+    .lead{color:var(--muted);font-size:clamp(16px,2.1vw,18px)}
+    .cta{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:12px;border:1px solid #243049;background:#121825;color:#dfe7ff;font-weight:600}
+    .btn.primary{background:linear-gradient(180deg,var(--brand),#2a57ff);border-color:#2a57ff;color:white}
+    .section{padding:34px 0}
+    .section h2{margin:0 0 12px;font-size:24px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+    .service{padding:16px;border-radius:18px;border:1px solid #1e2536;background:#0e1220}
     .service h3{margin:0 0 6px;font-size:18px}
-    .service p{margin:0;color:var(--muted)}
-
-    footer{margin-top:30px;text-align:center;color:var(--muted);font-size:14px}
+    .service p{margin:0;color:#b9bfd3}
+    footer{border-top:1px solid #1b2333;color:#9fb0cc}
+    .cols{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+    @media (max-width:900px){.cols{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
-  <main class="container">
+  <header>
+    <div class="wrap nav">
+      <div class="logo">
+        <div class="badge">TM</div>
+        <div>Asiakirjajuridiikan asiantuntija</div>
+      </div>
+      <nav>
+        <a href="#palvelut">Palvelut</a>
+        <a href="#minusta">Minusta</a>
+        <a href="#yhteys">Yhteys</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- HERO -->
     <section class="hero">
       <div class="card">
-        <h1>Ratkaisut, jotka toimivat käytännössä – ei vain paperilla.</h1>
-        <p class="lead">Olen oikeustradenomi (AMK). Autan pk-yrityksiä ja yksityisiä laatimaan selkeät sopimukset, tietosuoja-asiakirjat ja muut käytännön ratkaisut, jotka toimivat arjessa.</p>
-
-        <div class="services">
-          <div class="service">
-            <h3>Sopimukset ja asiakirjat</h3>
-            <p>Palvelusopimukset, työsopimuspohjat, kauppa- ja vuokrasopimukset.
-            </p>
-          </div>
-
-          <div class="service">
-            <h3>Tietosuoja ja GDPR</h3>
-            <p>Rekisteriselosteet, tietosuojakäytännöt ja toimeksiannot yrityksille.
-            </p>
-          </div>
-
-          <div class="service">
-            <h3>HR-tuki käytännössä</h3>
-            <p>Työsuhdeasiakirjat, ohjeistukset ja henkilöstön dokumenttipohjat.</p>
-          </div>
-
-          <div class="service">
-            <h3>Yhtiö- ja yhdistysasiat</h3>
-            <p>Perustamiskirjat, pöytäkirjat ja rekisteri-ilmoitukset valmiiksi.
-            </p>
-          </div>
-        </div>
-
-        <p style="margin-top:20px;"><a class="cta" href="mailto:tuomas@oikeudellinenasiantuntija.fi?subject=Palvelupyynto">Ota yhteyttä</a></p>
-
-        <div class="disclaimer">
-          <strong>Huom.</strong>
-          <p style="margin:6px 0 0;">Palveluni eivät sisällä oikeudenkäyntiedustusta. Keskityn asiakirjoihin, sopimuksiin ja käytännön ratkaisuihin yritysten ja yksityisten tarpeisiin.</p>
+        <span class="badge">Etäpalvelut • koko Suomi</span>
+        <h1>Selkeä, nopea ja luottamuksellinen oikeusapu</h1>
+        <p class="lead">Asiakirjojen laatiminen, tietosuoja (GDPR) ja julkisoikeuden asiointiapu. Sopimukset ja muistutukset selkeällä kielellä.</p>
+        <div class="cta">
+          <a class="btn primary" href="mailto:juridinenasiantuntija@pm.me?subject=Yhteydenotto">Ota yhteyttä</a>
         </div>
       </div>
-
-      <aside style="align-self:start">
-        <div class="card">
-          <h3>Tee nopeasti</h3>
-          <p class="lead" style="font-size:15px">Lähetä kuvaus toimeksiannosta tai valitse valmis paketti: Sopimuspaketti, GDPR-paketti tai HR-paketti. Saat kustannusarvion arkipäivän sisällä.</p>
-          <p style="margin-top:12px"><a class="cta" href="mailto:tuomas@oikeudellinenasiantuntija.fi?subject=Toimeksianto">Pyydä tarjous</a></p>
-        </div>
-      </aside>
     </section>
 
-    <footer>
-      © Tuomas — Oikeustradenomi (AMK). Sivun teksti on informatiivinen, ei oikeudellinen neuvonta.
-    </footer>
+    <!-- PALVELUT -->
+    <section id="palvelut" class="section">
+      <h2>Palvelut</h2>
+      <div class="grid">
+        <div class="service"><h3>Asiakirjojen laatiminen</h3><p>Sopimukset, muistutukset ja oikaisuvaatimukset. Selkeä kieli ja käytännölliset ehdot.</p></div>
+        <div class="service"><h3>Tietosuoja (GDPR)</h3><p>Tietosuojaselosteet, DPA-liitteet ja käytännön ohjeet pk-yrityksille.</p></div>
+        <div class="service"><h3>Julkisoikeuden asiointiapu</h3><p>Hallintomenettely, julkisuuspyynnöt ja valituspolkujen hahmottaminen.</p></div>
+      </div>
+    </section>
+
+    <!-- MINUSTA -->
+    <section id="minusta" class="section">
+      <h2>Minusta</h2>
+      <p>Olen <strong>Tuomas Mäkinen</strong>, asiakirjajuridiikan asiantuntija ja oikeustradenomiopiskelija (AMK). Taustani on myynnissä ja startup-ympäristössä. Teen toimeksiannot ketterästi ja selkokielisesti.</p>
+    </section>
+
+    <!-- YHTEYS -->
+    <section id="yhteys" class="section">
+      <h2>Yhteystiedot</h2>
+      <p>Ota yhteyttä sähköpostitse – vastaan yleensä saman päivän aikana:</p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:juridinenasiantuntija@pm.me?subject=Yhteydenotto">juridinenasiantuntija@pm.me</a>
+      </div>
+    </section>
   </main>
+
+  <footer>
+    <div class="wrap cols" style="padding:20px 0">
+      <div>© <span id="y"></span> Tuomas Mäkinen — Asiakirjajuridiikan asiantuntija</div>
+      <div style="text-align:right">Sivusto: GitHub Pages</div>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "name": "Tuomas Mäkinen",
+        "jobTitle": "Asiakirjajuridiikan asiantuntija",
+        "email": "mailto:juridinenasiantuntija@pm.me",
+        "url": "https://oikeudellinenasiantuntija.github.io/tuomas-site/"
+      },
+      {
+        "@type": "WebSite",
+        "name": "Asiakirjajuridiikan asiantuntija – Tuomas Mäkinen",
+        "url": "https://oikeudellinenasiantuntija.github.io/tuomas-site/",
+        "inLanguage": "fi"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type":"Question","name":"Mitä palveluita tarjoat?","acceptedAnswer":{"@type":"Answer","text":"Asiakirjojen laatiminen, tietosuoja (GDPR) ja julkisoikeuden asiointiapu."}},
+          {"@type":"Question","name":"Miten otan yhteyttä?","acceptedAnswer":{"@type":"Answer","text":"Sähköpostitse osoitteeseen juridinenasiantuntija@pm.me."}},
+          {"@type":"Question","name":"Toimitatko koko Suomeen?","acceptedAnswer":{"@type":"Answer","text":"Kyllä, kaikki palvelut onnistuvat etänä koko Suomeen."}}
+        ]
+      }
+    ]
+  }
+  </script>
 </body>
 </html>
