@@ -1,13 +1,250 @@
-<section id="palvelut" class="services">
-  <h2>Palvelut</h2>
-  <div class="service-card">
-    <h3>Tietosuojaseloste (GDPR)</h3>
-    <p>Laadin yrityksellesi selkeän ja lainmukaisen tietosuojaselosteen: käsittelytarkoitukset, käsittelyperusteet, rekisteröityjen oikeudet, säilytysajat sekä päivitysohje.</p>
-    <ul>
-      <li>Kiinteä hinta / sopimuksen mukaan</li>
-      <li>Valmis 2–5 arkipäivässä aineiston saatua</li>
-      <li>Mahdollinen EN-versio</li>
-    </ul>
-    <a class="btn" href="#ota-yhteytta">Pyydä tarjous</a>
-  </div>
-</section>
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tietosuojatalo Oy – Tietosuojaselosteet (GDPR) avaimet käteen</title>
+  <meta name="description" content="Laadin yrityksellesi lainmukaisen ja selkeän tietosuojaselosteen (GDPR). Nopea toimitus, kiinteä hinnoittelu ja päivitysohjeet jatkoon. Pyydä tarjous.">
+  <link rel="canonical" href="https://www.tietosuojatalo.fi/">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tietosuojatalo Oy – Tietosuojaselosteet (GDPR) avaimet käteen">
+  <meta property="og:description" content="Laadin yrityksellesi lainmukaisen ja selkeän tietosuojaselosteen. Nopea toimitus, kiinteä hinnoittelu ja päivitysohjeet.">
+  <meta property="og:url" content="https://www.tietosuojatalo.fi/">
+  <meta property="og:image" content="https://www.tietosuojatalo.fi/og-image.jpg"> <!-- halutessasi lisää kuva -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favikoni (valinnainen) -->
+  <link rel="icon" href="/favicon.ico">
+
+  <!-- Strukturoitu data (schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Tietosuojatalo Oy",
+    "url": "https://www.tietosuojatalo.fi/",
+    "description": "Tietosuojaselosteet (GDPR) yrityksille – nopea ja selkeä avaimet käteen -palvelu.",
+    "areaServed": "FI",
+    "sameAs": []
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #0b1220;
+      --card: #0f172a;
+      --accent: #3b82f6; /* vaalea sininen */
+      --accent-2: #0ea5e9; /* vakuuttava vastaväri (sinisen sävy) */
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --ok: #22c55e;
+      --warn: #f59e0b;
+      --danger: #ef4444;
+      --radius: 14px;
+      --shadow: 0 10px 30px rgba(0,0,0,.25);
+      --maxw: 1100px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin:0; padding:0; background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
+    header { position: sticky; top:0; backdrop-filter: saturate(160%) blur(8px); background: rgba(11,18,32,.6); border-bottom: 1px solid rgba(255,255,255,.06); }
+    .nav { display:flex; align-items:center; justify-content:space-between; padding:14px 0; }
+    .brand { display:flex; align-items:center; gap:12px; font-weight: 700; letter-spacing:.2px; }
+    .brand .logo {
+      width:34px; height:34px; border-radius: 10px; background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      display:grid; place-items:center; color:white; font-weight:800;
+      box-shadow: var(--shadow);
+    }
+    .menu a { margin-left:18px; font-weight:600; color: var(--text); opacity:.9; }
+    .menu a.btn { padding:10px 14px; background: var(--accent); border-radius: 10px; color:white; box-shadow: var(--shadow); }
+    .menu a.btn:hover { filter: brightness(1.08); text-decoration:none; }
+
+    .hero { padding: 64px 0 40px; display:grid; gap:20px; }
+    .hero h1 { font-size: clamp(28px, 5vw, 44px); line-height:1.1; margin:0; }
+    .hero p { font-size: clamp(16px, 2.7vw, 19px); color: var(--muted); max-width: 760px; }
+    .cta { display:flex; gap:12px; flex-wrap:wrap; margin-top:10px; }
+    .cta .primary { background: var(--accent); color:white; padding:12px 16px; border-radius: 12px; font-weight:700; box-shadow: var(--shadow); }
+    .cta .secondary { border:1px solid rgba(255,255,255,.12); padding:12px 16px; border-radius:12px; color: var(--text); }
+
+    .grid { display:grid; gap:18px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+    .card { background: var(--card); border:1px solid rgba(255,255,255,.06); border-radius: var(--radius); padding:22px; box-shadow: var(--shadow); }
+    .card h3 { margin-top:0; }
+    ul.clean { margin:0; padding-left:16px; }
+    section { padding: 34px 0; }
+    .badge { display:inline-block; padding:6px 10px; border-radius:999px; font-size:12px; font-weight:700; background: rgba(59,130,246,.18); color:#cfe2ff; border:1px solid rgba(59,130,246,.35); }
+    .price { font-size: 28px; font-weight: 800; }
+    details { background: rgba(255,255,255,.02); border:1px solid rgba(255,255,255,.06); border-radius: 10px; padding:14px 16px; }
+    details + details { margin-top:10px; }
+
+    form { display:grid; gap:12px; }
+    input, textarea { width:100%; padding:12px 14px; border-radius:10px; border:1px solid rgba(255,255,255,.12); background: rgba(255,255,255,.04); color: var(--text); }
+    button[type="submit"] { background: var(--accent); color:white; padding:12px 16px; border:none; border-radius:12px; font-weight:700; cursor:pointer; box-shadow: var(--shadow); }
+    button[type="submit"]:hover { filter:brightness(1.08); }
+
+    footer { border-top: 1px solid rgba(255,255,255,.06); padding: 30px 0 50px; color: var(--muted); }
+    .muted { color: var(--muted); }
+    .center { text-align:center; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">
+        <div class="logo">TS</div>
+        <div>Tietosuojatalo Oy</div>
+      </div>
+      <nav class="menu" aria-label="Päävalikko">
+        <a href="#palvelu">Palvelu</a>
+        <a href="#hinta">Hinta</a>
+        <a href="#ukk">UKK</a>
+        <a href="#yhteys" class="btn">Pyydä tarjous</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <span class="badge">GDPR • Tietosuojaselosteet</span>
+      <h1>Tietosuojaseloste yrityksellesi — nopeasti ja oikein.</h1>
+      <p>Laadin yrityksellesi tai yhdistyksellesi selkeän ja lainmukaisen tietosuojaselosteen (GDPR). Saat valmiin dokumentin sekä käytännön päivitysohjeet: käsittelytarkoitukset, käsittelyperusteet, rekisteröityjen oikeudet, säilytysajat, vastaanottajat ja suojaus.</p>
+      <div class="cta">
+        <a class="primary" href="#yhteys">Pyydä tarjous</a>
+        <a class="secondary" href="#palvelu">Katso mitä sisältyy</a>
+      </div>
+    </section>
+
+    <!-- Ainoa palvelu -->
+    <section id="palvelu">
+      <div class="grid">
+        <article class="card">
+          <h2>Tietosuojaseloste (GDPR)</h2>
+          <p class="muted">Avaimet käteen — sisällöt, perustelut ja päivitysmalli.</p>
+          <ul class="clean">
+            <li>Nykytilan nopea kartoitus (lyhyt kysely/puhelu)</li>
+            <li>Käsittelytarkoitukset ja käsittelyperusteet</li>
+            <li>Rekisteröityjen oikeudet ja informointi</li>
+            <li>Säilytysajat &amp; poistopolitiikka pääpiirteittäin</li>
+            <li>Vastaanottajat, siirrot, tekniset ja organisatoriset suojatoimet</li>
+            <li>Valmis julkaistavaksi verkkosivuillesi (HTML/PDF)</li>
+            <li>Päivitysohje ja checklist jatkoon</li>
+          </ul>
+        </article>
+        <aside class="card">
+          <h3>Toimitus</h3>
+          <ul class="clean">
+            <li><strong>Aineiston jälkeen:</strong> 2–5 arkipäivää</li>
+            <li><strong>Formaatti:</strong> PDF + HTML/Markdown</li>
+            <li><strong>Kielet:</strong> Suomi (EN lisäpalveluna)</li>
+            <li><strong>Tuki:</strong> Kevyt sparraus ja yksi korjauskierros</li>
+          </ul>
+          <p class="muted">Tarvittaessa teen myös englanninkielisen version.</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Hinta -->
+    <section id="hinta">
+      <div class="grid">
+        <div class="card">
+          <h2>Hinta</h2>
+          <p class="price">alk. 290 € + alv</p>
+          <p class="muted">Selkeä, kiinteä hinnoittelu pk-yrityksen perusrekisterille. Laajemmat kokonaisuudet (esim. useita eri rekistereitä) sovitaan nopeasti etukäteen.</p>
+          <a class="primary" href="#yhteys">Pyydä tarkka tarjous</a>
+        </div>
+        <div class="card">
+          <h3>Miksi tämä malli?</h3>
+          <ul class="clean">
+            <li>✓ Lain ydinkohdat mukana, ilman turhaa juristijargonia</li>
+            <li>✓ Valmis julkaistavaksi – säästää aikaa</li>
+            <li>✓ Päivitettävissä liiketoiminnan muuttuessa</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- UKK -->
+    <section id="ukk">
+      <h2>Usein kysyttyä</h2>
+      <details>
+        <summary>Kuinka nopeasti saan tietosuojaselosteen?</summary>
+        <p>Tyypillisesti 2–5 arkipäivää siitä, kun olen saanut tarvittavat tiedot (lyhyt kysely tai puhelu).</p>
+      </details>
+      <details>
+        <summary>Entä jos meillä on useita eri henkilötietorekistereitä?</summary>
+        <p>Teen tarjouksen rekisterikohtaisesti tai pakettina. Perusrekisteri (asiakasrekisteri) sisältyy hintaan, lisärekisterit sovitaan erikseen.</p>
+      </details>
+      <details>
+        <summary>Teetkö englanninkielisiä versioita?</summary>
+        <p>Kyllä, lisäpalveluna. Voit tilata suomen- ja englanninkielisen version samassa toimituksessa.</p>
+      </details>
+      <details>
+        <summary>Tarvitsenko vielä tietosuojapolitiikan tai sopimusliitteitä?</summary>
+        <p>Usein riittää selkeä tietosuojaseloste. Jos tarvitset lisäksi DPA:n (käsittelysopimus) tai prosessikuvausta, voin tarjota niistä erillisen tarjouksen.</p>
+      </details>
+    </section>
+
+    <!-- Yhteys -->
+    <section id="yhteys">
+      <div class="grid">
+        <div class="card">
+          <h2>Pyydä tarjous</h2>
+          <!-- HELPPO TAPA: mailto-painike -->
+          <p><a class="primary" href="mailto:info@tietosuojatalo.fi?subject=Tarjouspyyntö%20tietosuojaselosteesta&body=Hei,%20haluaisimme%20tarjouksen%20tietosuojaselosteesta.%20Yrityksen%20nimi:%20...%20Toimiala:%20...%20Nykyinen%20seloste:%20on/ei%20ole.%20Puhelin:%20...">Lähetä sähköpostilla</a></p>
+
+          <!-- VAIHTOEHTO: lomake (Formspree). Korvaa YOUR_ID oikealla ID:lläsi. -->
+          <form action="https://formspree.io/f/YOUR_ID" method="POST">
+            <label>
+              Nimi
+              <input type="text" name="nimi" required>
+            </label>
+            <label>
+              Sähköposti
+              <input type="email" name="email" required>
+            </label>
+            <label>
+              Viesti
+              <textarea name="viesti" rows="5" placeholder="Kuvaa lyhyesti tarpeesi (esim. toimiala, rekisterin käyttötarkoitus)"></textarea>
+            </label>
+            <!-- roskapostisuodatus -->
+            <input type="text" name="_gotcha" style="display:none">
+            <button type="submit">Lähetä</button>
+          </form>
+          <p class="muted" style="margin-top:8px;">Lähettämällä viestin hyväksyt, että käsittelen yhteydenottosi tiedot tarjouksen tekemistä varten.</p>
+        </div>
+        <div class="card">
+          <h3>Yhteystiedot</h3>
+          <p>
+            Tietosuojatalo Oy<br>
+            <a href="mailto:info@tietosuojatalo.fi">info@tietosuojatalo.fi</a><br>
+            www.tietosuojatalo.fi
+          </p>
+          <p class="muted">Toimin ensisijaisesti etänä koko Suomessa.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap grid">
+      <div>
+        <strong>Tietosuojatalo Oy</strong><br>
+        <span class="muted">Tietosuojaselosteet (GDPR) yrityksille</span>
+      </div>
+      <div>
+        <a href="/tietosuojaseloste.html">Tietosuojaseloste</a><br>
+        <a href="/evasteet.html">Evästeet</a>
+      </div>
+      <div class="muted center">© <span id="y"></span> Tietosuojatalo Oy</div>
+    </div>
+  </footer>
+
+  <script>
+    // Vuosi jalkaan automaattisesti
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
